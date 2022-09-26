@@ -1,0 +1,6 @@
+
+Total slide Number = 5 to 10
+Body font size = 14px
+Heading = 16px
+Background color = Bright (ppt_background.jpg) {please try to use same background}
+Content = same for every one
