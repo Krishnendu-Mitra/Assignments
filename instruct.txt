@@ -1,6 +1,9 @@
 
 Total slide Number = 5 to 10
-Body font size = 14px
-Heading = 16px
+Body font size = 14px  //in our computer it is 20px
+Heading = 16px  //in our computer it is 28px
 Background color = Bright (ppt_background.jpg) {please try to use same background}
 Content = same for every one
+
+Front and back page must include
+//front and back is not included any fiexd font size.
