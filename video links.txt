@@ -13,3 +13,6 @@ https://youtu.be/hmMYPZ5wLX0
 here only 3 important link will be given
 but our given topic is not limited in this 
 topics so try more knowlage
+
+4) Birth of hashing
+https://spectrum.ieee.org/hans-peter-luhn-and-the-birth-of-the-hashing-algorithm#:~:text=Information%20Scientist%3A%20Starting%20in%20the,sort%20both%20numbers%20and%20text.
