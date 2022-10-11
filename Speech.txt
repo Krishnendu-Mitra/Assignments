@@ -33,6 +33,98 @@ The next question -
 Hash function is any function that can be convert any simple text to a hashed text and fixed arbitrary size. The values returned by a hash function are called hash values or hash codes.
 Now hash table
 Hash table is used to store keys pairs and It is nothing but a special type of array. The average time required to search for an element in a hash table is O(1) time.
+Advantages of hash table-SPEECH OF PRESENTATION: 
+
+First of all, the name of our topic is Hashing and collision So before knowing about the Hashing and collision,
+
+ you have to take about the history of the hashing, which means when, where, how or why the hashing was made. 
+
+Its discovery was not as easy as it sounds. There are a lot of huge things behind this. During our research,
+
+ we learned this from certain experts. 
+
+Now let's get started.The time was in June of the 1941 in a corner of America for a computer lab called SVL, 
+
+it is a IBM computer research facilities. At that time, Sir Hans Peter Luhn was appointed as a head of  Information 
+
+Retrieval Research Department here. James Perry and Malcolm Dyson brought a problem to this department of
+
+ IBM in 1947. The challenge was to search chemical compounds that had been stored in coded form. This was 
+
+the first Luhn was introduced to the experimenting field of information and documentation science. He used to 
+
+provide solutions, but at that time the available machines also had their limitations. He then had to find new 
+
+methods to overcome these limitations. And the 1950s came which was the ‘computer age’. Luhn had started 
+
+spending a great deal amount of time on the challenges of the information retrieval system. In 1953 Luhn had the 
+
+idea to put all the information in a bucket. He predicted that this would make searching faster. And this information 
+
+can consist of numbers as well as text. Luhn’s invention was further shaped and modified by scientists of the 
+
+coming generation . And now we call this thing Hashing.
+
+Here we give the path way to cover the full hashing and Collision.
+
+Now let's get to the main point of "what hashing is"-
+
+Hashing is a technique of mapping a large chunk of data into small tables using a hashing function. 
+
+A particular piece of information can also be found from a group using hashing.Let us understand this with a simple 
+
+example -
+
+Students are assigned a special unique roll number in schools or universities.With the help of that all the information 
+
+about that student is available. Like his name, class, address etc. Those of you who know about php and sql  then you 
+
+will know how to get this information well, and those of you who do not know about this matter have nothing to fear, 
+
+you will know later. In hashing, in this way, each object is given a key with the help of which its information can be 
+
+retrieved.
+
+Next point is "which ability have hashing"-
+
+Some key points are as follows 
+
+*) In hashing, large keys can also be changed to small keys.
+
+*) All information is stored in a table called Hash table, so there is no difficulty in searching.
+
+*)Its main mantra(law) is to be able to do all kinds of work within O(1) time.
+
+Now "how to implement hashing"
+
+It uses the Hash function to convert the element to a number that is stored in the Hashtable as a key.Here's an 
+
+attempt to show how it does this.And it is good to mention that every division time is divided by 10 for ease of 
+
+understanding First, take 11 and divide it by 10 and get 1, so here 11 is placed at index 1 in this hash-table.
+
+Now, take 12 and divide it by 10 and get 2, so here 12 is placed at index 2 in this hash-table.
+
+In this way all were done and placed in their proper places.
+
+The next question -
+
+"What is Hash function"
+
+Hash function is any function that can be convert any simple text to a hashed text and fixed arbitrary size. 
+
+The values returned by a hash function are called hash values or hash codes.
+
+Now hash table
+
+Hash table is used to store keys pairs and It is nothing but a special type of array. The average time required
+
+ to search for an element in a hash table is O(1) time.
+
 Advantages of hash table-
+
+*)Hash table is more apparent when the number of entries is large.
+
+*)
 *)Hash table is more apparent when the number of entries is large.
 *)
