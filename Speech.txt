@@ -5,12 +5,11 @@ Char 1 ->  // Part of history(krish)
 First of all, the name of our topic is Hashing and collision 
 So before knowing about the Hashing and collision, we have to 
 take about the history of the hashing, which means when, where,
-how or why the hashing was made. 
+ how or why the hashing was made. 
 Its discovery was not as easy as it sounds. There are a lot of 
 huge things behind this. During our research, we learned this 
-from certain experts. 
-Now let's get started.The time was in June
-of the 1941 in a corner of America for a computer lab called SVL,
+from certain experts. Now let's get started.The time was in June
+ of the 1941 in a corner of America for a computer lab called SVL,
 it is a IBM computer research facilities. At that time, Sir Hans
 Peter Luhn was appointed as a head of  Information Retrieval 
 Research Department here. James Perry and Malcolm Dyson brought
@@ -83,4 +82,50 @@ Hash table is used to store keys pairs and It is nothing but a special type of a
 The average time required to search for an element in a hash table is O(1) time.
 Advantages of hash table-
 *)Hash table is more apparent when the number of entries is large.
-*)
+*) Any key can be easily found because it is just a simple bucket/array.
+*) Any key in this table can be changed or deleted if needed.
+//Change the slide
+Now , the next point is collision-
+By now, a question may come to many people's mind that if a key gets the same place in
+the hash table as calculated by the hash function, who will be in that place. Yes, this
+incident happened in 1956. It was then named Collision which is still unchanged.
+Collisions are nothing more than when the hash function is in a situation where more than 
+one key is placed in the same place in the hash table. In the example given here it 
+appears that the two keys 13 and 23 are in the same position in the hash table is index 3,
+so their problem is who will be in that position.That problem will be solved from the 
+following points.
+
+The next point is resolution of collision-
+The way to settle the collision so that it does not happen is called Resolution of collision.
+This solution can be divided into two types namely open hashing and close hashing. A system 
+that has an open hashing is called a "separate Chaining". On the other hand, closed hashing 
+can be divided into three ways, namely "linear probing, quadratic probing, and double hashing".
+
+//Change the slide
+
+char 1 -> //resolution (krish)
+
+The tree object is very straightforward where the keys are stored in separate nodes and the 
+root table only holds the addresses of the first nodes. All will be understood by looking 
+at this example given here Here the first 11 is collected in a node and its address is kept
+in index 1 only. In this way, 12 are collected in a separate node and its address is kept in 
+index 2.And when the time came for 13, 23 and 53, then they were collected in different nodes 
+and made a chain and its base address was kept in index 3.The rest were done in the same way.
+
+The next point is Linear probing-
+
+The previous method was very difficult to find a key and took up a lot of space so this method
+was introduced instead.Its subject matter is also very simple.One by one the keys have to sit
+in their place. If a key is sitting in its proper place and sees that there is already a key 
+sitting there, then it will obey this rule written here.The rule is that the number of times 
+it tries will be added to the value of the primary key and divided by 10 here.
+The example is also given when 23 went to sit in his seat and found there was 13. This rule 
+was observed, first time tried so 1 joined it and became 24 and divided by 10 left 4. So 24 
+sat index 4 because it was empty. And when the time came for 14th, as her place was full, the 
+rule was observed and 14th changed to 15th. And as she could not find the 5th place, she went 
+to the 0th place according to the rules.
+
+//change the slide
+
+char 2 ->
+
