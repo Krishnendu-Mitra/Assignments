@@ -5,15 +5,16 @@ Char 1 ->  // Part of history(krish)
 First of all, the name of our topic is Hashing and collision 
 So before knowing about the Hashing and collision, we have to 
 take about the history of the hashing, which means when, where,
- how or why the hashing was made. 
+how or why the hashing was made. 
 Its discovery was not as easy as it sounds. There are a lot of 
 huge things behind this. During our research, we learned this 
-from certain experts. Now let's get started.The time was in June
- of the 1941 in a corner of America for a computer lab called SVL,
+from certain experts.
+Now let's get started.The time was in June
+of the 1941 in a corner of America for a computer lab called SVL,
 it is a IBM computer research facilities. At that time, Sir Hans
 Peter Luhn was appointed as a head of  Information Retrieval 
 Research Department here. James Perry and Malcolm Dyson brought
-a problem to this department of IBM in 1947. The challenge was to 
+a problem to this department (of IBM) in 1947. The challenge was to 
 search chemical compounds that had been stored in coded form. This
 was the first Luhn was introduced to the experimenting field of 
 information and documentation science. He used to provide solutions,
@@ -29,7 +30,7 @@ generation . And now we call this thing Hashing.
 
 //change the slide
 
-Here we give the path way to cover the full hashing and Collision.
+Here we give the path way to cover the hashing and Collision.
 please check out the light blue lines only to acchive the best
 root to understand hashing and collision.
 
@@ -77,6 +78,10 @@ The next question -
 Hash function is any function that can be convert any simple text to a hashed text
 and fixed arbitrary size. The values returned by a hash function are called hash 
 values or hash codes.
+here, we give some example of hash function, point to be noted that case 4 have
+a prime number 37 to achive a unique function and this type of hashing use in
+cryptography so case 4 is out of syllabus now.
+
 Now the point is hash table-
 Hash table is used to store keys pairs and It is nothing but a special type of array.
 The average time required to search for an element in a hash table is O(1) time.
@@ -84,7 +89,9 @@ Advantages of hash table-
 *)Hash table is more apparent when the number of entries is large.
 *) Any key can be easily found because it is just a simple bucket/array.
 *) Any key in this table can be changed or deleted if needed.
+
 //Change the slide
+
 Now , the next point is collision-
 By now, a question may come to many people's mind that if a key gets the same place in
 the hash table as calculated by the hash function, who will be in that place. Yes, this
@@ -103,14 +110,18 @@ can be divided into three ways, namely "linear probing, quadratic probing, and d
 
 //Change the slide
 
-char 1 -> //resolution (krish)
+char 1 -> //resolution  (krish)
 
-The tree object is very straightforward where the keys are stored in separate nodes and the 
-root table only holds the addresses of the first nodes. All will be understood by looking 
-at this example given here Here the first 11 is collected in a node and its address is kept
-in index 1 only. In this way, 12 are collected in a separate node and its address is kept in 
-index 2.And when the time came for 13, 23 and 53, then they were collected in different nodes 
-and made a chain and its base address was kept in index 3.The rest were done in the same way.
+Now the next point is Separet chaining-
+The separet chaining object is very straightforward where the keys are stored in separate 
+nodes and the root table only holds the addresses of the first nodes. All will be understood
+by looking at this example given here Here the first 11 is collected in a node and its address
+is kept in index 1 only. In this way, 12 are collected in a separate node and its address is 
+kept in index 2.And when the time came for 13, 23 and 53, then they were collected in different
+nodes and made a chain and its base address was kept in index 3.The rest were done in the same 
+way.
+In separate chaining the load factor can rise above 1 or lemda >= 1 without hurting performance 
+very much.
 
 The next point is Linear probing-
 
@@ -128,4 +139,45 @@ to the 0th place according to the rules.
 //change the slide
 
 char 2 ->
+
+Next point is Quadratic probing-
+The Quadratic probing object is very simple. it's act like linear probing but there rule is 
+some different, The rule is that the (number of times it tries)^2 will be added to the 
+value of the primary key and divided by 10 here.
+The example is also given when 23 went to sit in his seat and found there was 13 and 14. This 
+rule was observed, she went to the 0th place according to the rules.
+In case of lemda < 1/2 is give the empty slot with guarantee.
+
+//change the slide
+
+Next point is Double hashing-
+Double hashing is similar to linear probing and the only difference is the interval between 
+successive probes. The interval between probes is computed by using two hash functions.
+now see the examples //injer moto kore bolish
+
+char 3 ->
+Next point is Re-Hashing-
+This point is very very simple to others. The main rule of it that if the tablesize is m
+and data size is n and it hit the hash function then simpley chang the size of table and make
+new table.
+In example, when the first hash table is fail to insertion then we introduce a new hash table
+with bigger size to insertion.
+When my hash table is cross lemda = 1/2 or insertion is failed by cause of table size then and
+only then we can use this method.
+
+// change the slide
+
+Application of hashing - //ata slide dekhe mukhosto kor any 2/3 te point, importent one is -->
+1. Database indexing – Hash tables may also be used as disk-based data structure and database indices.
+2. Caches – Hash tables can be used to implement cache i.e. auxiliary data tables that used to speed 
+   up the access to data, which is primarily stored in slower media.
+3. Password Verification – Cryptographic hash functions are very commonly used in password verification. 
+etc...
+
+
+char -> 1,2,3
+THE END
+
+
+
 
